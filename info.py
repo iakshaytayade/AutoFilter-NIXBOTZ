@@ -15,9 +15,9 @@ id_pattern = re.compile(r'^.\d+$')
 #------------------------- ʙoᴛ ɪɴғoʀᴍᴀᴛɪᴏɴ --------------------------
 
 SESSION = environ.get('SESSION', 'NIXBOTZ')
-API_ID = int(environ.get('API_ID', '25061703'))
-API_HASH = environ.get('API_HASH', '744a017a9c53f3ab489ea0bfa0ffce3f')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '26518045'))
+API_HASH = environ.get('API_HASH', 'e759fbf7d84113e47b18af5b665ee945')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8084161858:AAF9yIA1xOVzV2KXEINrmMs9vVTFenC6nGk")
 
 #--------------------------- ɪᴍᴀɢᴇs ʟɪɴᴋ -----------------------------
 
@@ -55,36 +55,36 @@ REFERAL_PREMUM_TIME = environ.get('REFERAL_PREMUM_TIME', '2592000') # sᴇᴛ ɪ
 # 📌 ɴoᴛᴇ: ɢɪvᴇ ʙᴇʟow vᴀʀɪᴀʙʟᴇs wʜo cʜᴀɴɴᴇʟs ɪᴅ ᴀᴅᴅ ɪɴ ᴛʜᴇ cʜᴀɴɴᴇʟ, ʙᴏᴛ ᴍᴜsᴛ ᴀᴅᴍɪɴ wɪᴛʜ ꜰᴜʟʟ sᴜᴘᴘoʀᴛ
 
 # ᴀᴅᴍɪɴs ɪᴅ  || ꜰɪʟʟ ᴍᴜʟᴛɪᴘʟᴇꜱ ɪᴅ ʙʏ ɢɪvɪɴɢ oɴᴇ sᴘᴀcᴇ ʙᴇᴛwᴇᴇɴ ᴇᴀc𝙷 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6899946963').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1170346858').split()]
 
 # ɢɪvᴇ wʜo cʜᴀɴɴᴇʟ ɪᴅ wʜᴇʀᴇ ʏoᴜ ᴜᴘʟoᴀᴅ ʏoᴜʀ ꜰɪʟᴇꜱ ᴛʜᴇɴ, ʙᴏᴛ ᴀᴜᴛoᴍᴀᴛɪcᴀʟʟʏ sᴀvᴇ ɪᴛ ɪɴ ᴅᴀᴛᴀʙᴀsᴇ. ɪᴛ ɪs ᴀʟso ᴋɴowɴ ᴀs ꜰɪʟᴇ cʜᴀɴɴᴇʟ.
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002319064428').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002398895612').split()]
 
 # ɢɪvᴇ wʜo cʜᴀɴɴᴇʟ ɪᴅ wʜᴇʀᴇ ʙᴏᴛ sᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇs ɪꜰ ɴᴇw ᴜsᴇʀ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴏʀ ʙᴏᴛ sᴇɴᴅ ꜰɪʟᴇꜱ ᴀɴʏ ᴜsᴇʀ.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002377076025'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002363820788'))
 
 # ɢɪvᴇ wʜo cʜᴀɴɴᴇʟ ɪᴅ wʜᴇʀᴇ ʙᴏᴛ oɴʟʏ sᴇɴᴅ ᴘʀᴇᴍɪᴜᴍ ᴍᴇꜱꜱᴀɢᴇs 
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002377076025')) 
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002432817906')) 
 
 # ɢɪvᴇ wʜo cʜᴀɴɴᴇʟ ɪᴅ wʜᴇʀᴇ ʙᴏᴛ ᴅᴇʟᴇᴛᴇ ɪɴᴅᴇx ꜰɪʟᴇ, ғoʀwᴀʀᴅ wʜo ꜰɪʟᴇ ɪɴ ᴛʜᴇ cʜᴀɴɴᴇʟ ғʀoᴍ ꜰɪʟᴇ cʜᴀɴɴᴇʟ wʜɪcʜ ʏoᴜ wᴀɴᴛ ᴛo ᴅᴇʟᴇᴛᴇ ᴛʜᴇɴ, ʙᴏᴛ ᴀᴜᴛoᴍᴀᴛɪcᴀʟʟʏ ᴅᴇʟᴇᴛᴇ ᴛʜᴀᴛ ꜰɪʟᴇ ғʀoᴍ ᴅᴀᴛᴀʙᴀsᴇ. 
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002264438255').split()]  
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002289436415').split()]  
 
 # ɢɪvᴇ wʜo ᴜsᴇʀ ɪᴅ wʜɪcʜ ʏoᴜ wᴀɴᴛ sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ 
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6899946963').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1170346858').split()]
 
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6899946963').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1170346858').split()]
 
 # ɢɪvᴇ ʏoᴜʀ ғoʀcᴇ sᴜʙscʀɪʙᴇ cʜᴀɴɴᴇʟ ɪᴅ ᴇʟsᴇ ʟᴇᴀvᴇ ɪᴛ ʙʟᴀɴᴋ.
-auth_channel = environ.get('AUTH_CHANNEL', '-1002386346176')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002160446272')
 
 # ɢɪvᴇ sᴜᴘᴘoʀᴛ cʜᴀɴɴᴇʟ ɪᴅ ʙᴏᴛ ɴᴏᴛ sᴇɴᴅ ꜰɪʟᴇ ʜᴇʀᴇ ʙᴇcᴀᴜsᴇ ᴛʜɪs ɪs sᴜᴘᴘoʀᴛ cʜᴀɴɴᴇʟ.
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002386346176') 
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002350678777') 
 
 # ɢɪvᴇ wʜo cʜᴀɴɴᴇʟ ɪᴅ ғoʀ ɪꜰ ᴜsᴇʀ ʀᴇQᴜᴇsᴛ ꜰɪʟᴇ wɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ oʀ ʜᴀsʜᴛᴀɢ ʟɪᴋᴇ - /request oʀ #request
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-4554257154') 
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002325366768') 
 
 # ɢɪvᴇ wʜo cʜᴀɴɴᴇʟ ɪᴅ ғoʀ /batch ᴄᴏᴍᴍᴀɴᴅ ꜰɪʟᴇ sᴛoʀᴇ
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002377394010')).split()]
 
 auth_grp = environ.get('AUTH_GROUP')
 
@@ -96,14 +96,14 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 
 #------------------------------ ʟɪɴᴋ --------------------------------
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Ni_Movie_Request_Group') 
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/NIXBOTZ') 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/NIXBOTZ_Support') 
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+zP5SFl_CagczZTZl') 
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/isPelo') 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+DNpUtgBsoABlMWQ1') 
 
 #------------------------- ᴍoɴɢoᴅʙ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ --------------------------------------------
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bipinmfp07:OmodwqrRcvV6lrV4@cluster0.2t7so.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "NIXDB")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://iakshaytayade:iakshaytayade@cluster0.7ujhg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "iakshaytayade")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'NIXFILES')
 
 #---------------------------- sʜᴏʀᴛʟɪɴᴋ ---------------------------
